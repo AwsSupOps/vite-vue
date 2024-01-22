@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "vitevue",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AWS_LAMBDA",
+      "lambdaFunction": "graphQlLambdaAuthorizerf9d3664b",
+      "ttlSeconds": "0"
+    }
+  }
+}

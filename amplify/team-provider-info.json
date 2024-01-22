@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vitevue-dev-143858-authRole",
+      "UnauthRoleArn": "arn:aws:iam::737978780512:role/amplify-vitevue-dev-143858-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::737978780512:role/amplify-vitevue-dev-143858-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-vitevue-dev-143858-deployment",
+      "UnauthRoleName": "amplify-vitevue-dev-143858-unauthRole",
+      "StackName": "amplify-vitevue-dev-143858",
+      "StackId": "arn:aws:cloudformation:us-east-1:737978780512:stack/amplify-vitevue-dev-143858/fa9b5aa0-b933-11ee-a54f-0e73c1e9cadf",
+      "AmplifyAppId": "dcwjmbilcw5fm"
+    },
+    "categories": {
+      "function": {
+        "graphQlLambdaAuthorizerf9d3664b": {}
+      }
+    }
+  }
+}
