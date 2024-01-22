@@ -13,7 +13,7 @@ Amplify.configure(config,
         API: {
           GraphQL:  {
             headers: async () => ({
-              'Authorization': 'custom'
+              'Authorization': 'myAuthToken'
             })
           }
         }
