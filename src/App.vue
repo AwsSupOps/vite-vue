@@ -2,6 +2,9 @@
   import * as mutations from './graphql/mutations';
   import { generateClient } from 'aws-amplify/api';
   import { onMounted, ref } from 'vue';
+  
+  const getAuthToken = () => 'myAuthToken';
+  const lambdaAuthToken = getAuthToken();
 
   const name = ref('');
   const description = ref('');
@@ -13,7 +16,9 @@
     const todo = { name: name.value, description: description.value };
     await client.graphql({
       query: mutations.createTodo,
-      variables: { input: todo }
+      variables: { input: todo },
+      //authToken: lambdaAuthToken
+      
     });
     name.value = '';
     description.value = '';

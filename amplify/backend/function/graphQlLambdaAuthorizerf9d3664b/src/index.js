@@ -10,7 +10,7 @@ exports.handler = async (event) => {
     requestContext: { apiId, accountId },
   } = event;
   const response = {
-    isAuthorized: authorizationToken === 'custom-authorized',
+    isAuthorized: authorizationToken === 'myAuthToken',
     resolverContext: {
       // eslint-disable-next-line spellcheck/spell-checker
       userid: 'user-id',
@@ -18,10 +18,10 @@ exports.handler = async (event) => {
       more_info: 'contextual information B',
     },
     deniedFields: [
-      `arn:aws:appsync:${process.env.AWS_REGION}:${accountId}:apis/${apiId}/types/Event/fields/comments`,
-      `Mutation.createEvent`,
+      // `arn:aws:appsync:${process.env.AWS_REGION}:${accountId}:apis/${apiId}/types/Event/fields/comments`,
+      // `Mutation.createEvent`,
     ],
-    ttlOverride: 300,
+    //ttlOverride: 300,
   };
   console.log(`response >`, JSON.stringify(response, null, 2));
   return response;

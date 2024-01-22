@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "graphQlLambdaAuthorizerf9d3664b": {}
+        "graphQlLambdaAuthorizerf9d3664b": {
+          "deploymentBucketName": "amplify-vitevue-dev-143858-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizerf9d3664b-6d3973396d50394d5856-build.zip"
+        }
+      },
+      "api": {
+        "vitevue": {}
       }
     }
   }

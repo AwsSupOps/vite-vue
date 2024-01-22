@@ -24,5 +24,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_graphQlLambdaAuthorizerf9d3664b_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizerf9d3664b"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizerf9d3664b_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizerf9d3664b"
+        }
+      ]
+    }
   }
 }
