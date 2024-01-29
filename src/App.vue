@@ -3,8 +3,8 @@
   import { generateClient } from 'aws-amplify/api';
   import { onMounted, ref } from 'vue';
   
-  const getAuthToken = () => 'myAuthToken';
-  const lambdaAuthToken = getAuthToken();
+ // const getAuthToken = () => 'myAuthToken';
+  //const lambdaAuthToken = getAuthToken();
 
   const name = ref('');
   const description = ref('');
