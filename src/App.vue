@@ -10,14 +10,22 @@
   const description = ref('');
 
   const client = generateClient();
+  
+  
 
   async function addTodo() {
     if (!name.value || !description.value) return;
     const todo = { name: name.value, description: description.value };
-    await client.graphql({
-      query: mutations.createTodo,
-      variables: { input: todo },
-      //authToken: lambdaAuthToken
+    // await client.graphql({
+    //   query: mutations.createTodo,
+    //   variables: { input: todo },
+    //   //authToken: lambdaAuthToken
+    
+  const res = await client.graphql({
+  query: mutations.createTodo,
+  variables: { input: todo },
+  authMode: 'lambda',
+  authToken: 'myAuthToken',
       
     });
     name.value = '';
